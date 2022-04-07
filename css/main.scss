@@ -1,4 +1,5 @@
-$tokio-main: rgb(255,238,206);
+$tokio-main: #FFEBCD;
+$tokio-red: #bb1e1e;
 
 body {
     // font-family: 'PT Serif', serif;
@@ -116,6 +117,10 @@ font-family: 'Shippori Mincho', serif;
 //     background-color: #444;
 //   }
 
+.br_on500 {
+    display:none;
+}
+
 .main {
     background:$tokio-main;
     overflow-x: hidden;
@@ -156,6 +161,9 @@ font-family: 'Shippori Mincho', serif;
                     height:100%;
                     background:rgba(0,0,0,0.25);
                     padding:20px;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
                     p {
                         color:#fff;
                         font-size:1.25em;
@@ -192,6 +200,10 @@ font-family: 'Shippori Mincho', serif;
             }
             h5 {
                 margin-top:3vh;
+                font-size: 1.25em;
+            }
+            h6 {
+                font-size: 2em;
             }
             // padding:3vh 0;
             .points {
@@ -200,7 +212,9 @@ font-family: 'Shippori Mincho', serif;
                 margin:2vh auto;
                 .contents {
                     // background:aquamarine;
-                    background:rgba(255,255,255,0.8);
+                    background: rgb(224,224,224);
+                    background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(252,252,252,1) 54%); 
+                    border:1px solid #555;
 
                     
 
@@ -208,15 +222,36 @@ font-family: 'Shippori Mincho', serif;
                     height:100%;
                     h4 {
                         font-size:1em;
+                        font-weight: 700;
+                        color:rgb(25, 26, 45);
+                        &::before {
+                            content: '~';
+                            font-family: "Font Awesome 5 Free";
+                            content: '\f0d9';
+                            padding-right:4px;
+                        }
+                        &::after {
+                            content: '~';
+                            font-family: "Font Awesome 5 Free";
+                            content: '\f0da';
+                            padding-left:4px;
+                        }
                     }
+                    
                     h5 {
                         font-size:1.25em;
                         margin-top:5px;
+                       span {
+                        padding-bottom:3px;
+                        border-bottom: 1px solid rgb(65, 65, 65);
+                       }
                     }
                     p {
-                        color:#000;
-                        padding:20px 10px;
+                        // background:#fdde83;
+                        // height:100%;
+                        padding:20px 5px;
                         font-weight: normal;
+                        text-align:left;
                     }
                 }
             }
@@ -225,8 +260,44 @@ font-family: 'Shippori Mincho', serif;
 
     .sect02 {
         margin:3vh auto;
+        .section-strip {
+            background: rgb(198,198,198);
+            background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);;
+            padding:20px 0;
+            h2.no-background {
+                position: relative;
+                overflow: hidden;
+                font-size:1.25em;
+                font-family: 'Klee One', cursive;
+                span {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    zoom: 1;
+                    *display: inline;
+                    *vertical-align: auto;
+                    position: relative;
+                    padding: 0 20px;
+                    color:#000;
+            
+                    &:before, &:after {
+                        content: '';
+                        display: block;
+                        width: 1000px;
+                        position: absolute;
+                        top: 0.73em;
+                        border-top: 1px solid rgb(138,124,113);;
+                    }
+            
+                    &:before { right: 100%; }
+                    &:after { left: 100%; }
+                }
+            }
+        }
         .sect02-01 {
             margin:4vh auto;
+            // h2 {
+            //     text-align: center;
+            // }
             .voices {
                 
                 width:100%;
@@ -238,55 +309,97 @@ font-family: 'Shippori Mincho', serif;
                         text-align: center;
                         background:#fff;
                         height:100%;
-                        padding:10px;
-                        h4 {
-                            margin-top:10px;
+                        box-shadow: 1px 3px 6px rgba(122, 122, 122,0.7);
+                        // padding:10px;
+                        .top {
+                            padding:10px;
+                            background:rgb(50,50,50);
+                            h4 {
+                                font-weight: 800;
+                                color:#fff;
+                            }
                         }
                         p {
                             color:#000;
                             font-size:1.15em;
+                            padding:20px 10px;
                         }
                     }
                 }
             }
+            .plus {
+                text-align: center;
+                font-size: 3em;
+                color:#fff;
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.66);
+            }
             h3 {
                 text-align: center;
                 line-height: 2em;
+                margin-top:10vh;
+                margin-bottom:10vh;
             }
-            h4 {
+            h4.bottom {
                 text-align: center;
                 line-height: 2em;
+                // color:red;
+                margin:6vh 0 10vh;
             }
             h5 {
                 margin-left:20px;
                 font-size: 1.5em;
             }
-            h6 {
+            h6.text5 {
                 text-align: center;
                 font-size: 1.5em;
+                line-height: 2em;
+                background:#fff;
+                padding:3vh 0;
+                em {
+                    font-style: normal;
+                    font-size: 1.5em;
+                    color:$tokio-red;
+                }
+                span {
+                    font-size:1.25em;
+                    color:$tokio-red;
+                    font-weight: 800;
+                }
             }
             .product-info {
-                width:96%;
+                width:95%;
+                // max-width:800px
+                // background:#555;;
                 margin:8vh auto;
+                padding:20px;
                 .parts {
                     // width:98%;
                     margin:0 auto;
-                    padding:10px 5px;
+                    // padding:10px 5px;
                     background:#fff;
-                    
-                    border:3px solid rgba(122, 122, 122,0.7);
-                    h5 {
-                        font-size:1em;
-                        margin-left:0;
-                        text-align: center;
-                        padding-bottom:10px;
-                        border-bottom: 1px solid #9a9a9a;
+                    box-shadow: 1px 3px 6px rgba(0,0,0,0.66);
+                    // border:3px solid rgba(122, 122, 122,0.7);
+                    .heading {
+                        background:#737373;
+                        h5 {
+                            font-size:1em;
+                            // margin-left:0;
+                            text-align: center;
+                            padding:15px 0;
+                            color:#fff;
+                            // border-bottom: 1px solid #9a9a9a;
+                        }
                     }
-                    p {
-                        font-size:0.9em;
-                        padding:5px 7px;
+                    .body {
+                        padding:15px 20px;
+                        p {
+                            font-size:0.9em;
+                            // padding:5px 7px;
+                        }
                     }
                 }
+                
+
             }
             
 
@@ -296,7 +409,8 @@ font-family: 'Shippori Mincho', serif;
     .sect03 {
         height:100%;
         // height:calc(100vh - 62.5px);
-        background:rgb(143, 143, 230);
+        // background:rgb(143, 143, 230);
+        background:#FFEBCD;
         position:relative;
         .sect03-title {
             position: absolute;
@@ -340,12 +454,45 @@ font-family: 'Shippori Mincho', serif;
     }
 
     .sect04 {
-        padding:4vh 0;
-        h2 {
-            text-align:center;
+        padding:0 0 6vh;
+        background:#fff;
+        .section-strip {
+            background: rgb(198,198,198);
+            background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);;
+            padding:20px 0;
+            h2.no-background {
+                position: relative;
+                overflow: hidden;
+                font-size:1.25em;
+                font-family: 'Klee One', cursive;
+                span {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    zoom: 1;
+                    *display: inline;
+                    *vertical-align: auto;
+                    position: relative;
+                    padding: 0 20px;
+                    color:#000;
+            
+                    &:before, &:after {
+                        content: '';
+                        display: block;
+                        width: 1000px;
+                        position: absolute;
+                        top: 0.73em;
+                        border-top: 1px solid rgb(138,124,113);;
+                    }
+            
+                    &:before { right: 100%; }
+                    &:after { left: 100%; }
+                }
+            }
         }
         h3 {
             text-align:center;
+            line-height: 2em;
+            margin-top:6vh;
         }
         .steps {
             margin:10vh auto;
@@ -436,6 +583,7 @@ font-family: 'Shippori Mincho', serif;
     
 
     .sect06 {
+        padding-bottom:10vh;
         h3 {
             text-align:center;
         }
@@ -473,7 +621,185 @@ font-family: 'Shippori Mincho', serif;
         }
        
     }
+
+    .sect09 {
+        background:rgb(170, 170, 170);
+        #section09 {
+            padding:12vh 0;
+            background:#fff;
+        }
+        #section05-01 {
+            text-align: center;
+            margin:4vh auto;
+            font-size: 2em;
+        }
+        .container {
+            .section05-manga {
+                .quote {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .text {
+                        background:rgba(122, 122, 122,0.7);
+                        border-bottom:3px solid #545454;
+                        p {
+                            padding:20px;
+                            color:#fff;
+                            margin-bottom:0;
+                            font-family: 'Klee One', cursive;
+                        }
+                    }
+                    
+                }
+            }
+            h4 {
+                text-align: center;
+                margin:4vh 0;
+                line-height:2em;
+            }
+            .text-area {
+                display:none;
+            }
+            .link-to {
+                position:relative;
+                img {
+                    border-radius: 10px;
+                    box-shadow: 1px 3px 6px rgba(0,0,0,0.33);
+                }
+                &:hover > .text-area {
+                    display: block;
+                    background:rgba(122, 122, 122,0.33);
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    height:100%;
+                    width:100%;
+                    border-radius: 10px;
+                    margin-top:auto;
+                    margin-bottom:auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        color:#fff;
+                    }
+                }
+            }
+            .reserve {
+                margin:8vh auto;
+            }
+            
+        }
+        
+    }
+
+    .sect10 {
+    // background:$limited-light;
+    .section-strip {
+        background: rgb(198,198,198);
+        background: linear-gradient(0deg, #fdde83 0%, #ffecbf 100%);;
+        padding:20px 0;
+        h2.no-background {
+            position: relative;
+            overflow: hidden;
+            font-size:1.25em;
+            font-family: 'Klee One', cursive;
+            span {
+                display: inline-block;
+                vertical-align: baseline;
+                zoom: 1;
+                *display: inline;
+                *vertical-align: auto;
+                position: relative;
+                padding: 0 20px;
+                color:#000;
+        
+                &:before, &:after {
+                    content: '';
+                    display: block;
+                    width: 1000px;
+                    position: absolute;
+                    top: 0.73em;
+                    border-top: 1px solid rgb(138,124,113);;
+                }
+        
+                &:before { right: 100%; }
+                &:after { left: 100%; }
+            }
+        }
+    }
+    .section10-01 {
+        margin:5vh auto;
+        text-align: center;
+        h3 {
+            line-height: 2em;
+            font-family: 'Klee One', cursive;
+            margin:3vh auto 6vh;
+        }
+        .pics {
+            width:75%;
+            margin:0 auto;
+        }
+    }
+    .to-link {
+        margin-top:5vh;
+        text-align: center;
+        padding:5px 10px;
+        // background:red;
+        a {
+            background: rgb(138,124,113);
+            border-radius: 5px;
+            background: linear-gradient(60deg, rgba(138,124,113,1) 0%, rgba(180,159,140,1) 100%);
+            color:#fff;
+            padding:10px 20px;
+            font-size: 1.5em;
+            &:hover {
+                text-decoration: underline;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.66);
+                background: rgb(228,226,224);
+                background: linear-gradient(60deg, rgba(228,226,224,1) 0%, rgba(218,193,169,1) 100%);
+            }
+        }
+    }
+    .video-area {
+        width:75%;
+        margin:0 auto 3vh;
+        video {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
 }
+}
+
+
+
+.footer {
+    padding:3vh 0;
+    background:rgb(30,30,30);
+    color:#fff;
+    .container {
+        .links {
+            width:100%;
+            max-width:420px;
+            margin:0 auto;
+            padding-top:2vh;
+            ul {
+                list-style: none;
+                padding:0;
+                li {
+                    // display: inline-block;
+                    font-size: 0.8em;
+                    a {
+                    color:#fff;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 992px) {
     .main {
@@ -561,4 +887,249 @@ font-family: 'Shippori Mincho', serif;
     .carousel {
         padding:0;
     }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .br_on500 {
+        display: block;
+    }
+    .main {
+
+        .sect01 {
+            .sect01-top {
+                h3 {
+                    font-size: 1.25em;
+                    // color:red;
+                }
+            }
+            .sect01-02 {
+                h3 {
+                    font-size: 1.5em;
+                }
+                h4 {
+                    font-size:1.5em;
+                }
+            }
+            .sect01-03 {
+                h3 {
+                    font-size:1.25em;
+                    line-height: 2em;
+                }
+                h6 {
+                    font-size: 1.5em;
+                    line-height: 2em;
+                }
+            }
+        }
+        .sect02 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            .sect02-01 {
+                h3 {
+                    font-size: 1.25em;
+                }
+                h4.bottom {
+                    font-size: 1.25em;
+                }
+            }
+        }
+        .sect04 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            h3 {
+                font-size: 1.5em;
+            } 
+        }
+        // .sect09 {
+        //     .container {
+        //         h4 {
+        //             font-size: 1.25em;
+        //         }
+        //     }
+        // }
+        .sect10 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            .section10-01 {
+                .pics {
+                    width:100%;
+                }
+                h3 {
+                    font-size: 1.25em;
+                }
+            }
+            .video-area {
+                width:100%;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:428px) {
+
+    .main {
+
+        .sect01 {
+            .sect01-top {
+                h3 {
+                    font-size: 1.1em;
+                    // color:red;
+                }
+                h4 {
+                    font-size: 1.25em;
+                }
+            }
+            .sect01-02 {
+                h3 {
+                    font-size: 1.25em;
+                }
+                h4 {
+                    font-size:1.25em;
+                }
+            }
+            .sect01-03 {
+                h3 {
+                    font-size:1.25em;
+                    line-height: 2em;
+                }
+                h6 {
+                    font-size: 1.5em;
+                    line-height: 2em;
+                }
+            }
+        }
+        .sect02 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.6em;
+
+                    }
+                }
+            }
+            .sect02-01 {
+                h3 {
+                    font-size: 1.25em;
+                }
+                h4.bottom {
+                    font-size: 1.25em;
+                }
+                h6.text5 {
+                    font-size: 1.25em;
+                }
+            }
+        }
+        .sect04 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            h3 {
+                font-size: 1.5em;
+            } 
+        }
+        .sect10 {
+            .section10-01 {
+                h3 {
+                    font-size: 1em;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:400px) {
+
+    .main {
+        .sect10 {
+            .section10-01 {
+                h3 {
+                    font-size: 1em;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:375px) {
+
+    .main {
+
+        
+        .sect02 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.6em;
+
+                    }
+                }
+            }
+            .sect02-01 {
+                h3 {
+                    font-size: 1.05em;
+                }
+                h4.bottom {
+                    font-size: 1.05em;
+                }
+                h6.text5 {
+                    font-size: 1.05em;
+                }
+            }
+        }
+        .sect04 {
+            .section-strip {
+                h2.no-background {
+                    span {
+                        font-size: 0.7em;
+
+                    }
+                }
+            }
+            h3 {
+                font-size: 1.25em;
+            } 
+        }
+        .sect09 {
+            .container {
+                h4 {
+                    font-size: 1.25em;
+                }
+                h3 {
+                    font-size: 1.25em;
+                }
+            }
+        }
+        .sect10 {
+            .section10-01 {
+                h3 {
+                    font-size: 1em;
+                }
+            }
+        }
+    } 
 }
