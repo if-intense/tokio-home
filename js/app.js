@@ -1,10 +1,12 @@
 // const { default: Vue } = require("vue");
 
+
+
 var vm = new Vue({
   el: "#section01",
   data: {
     message:
-      "サロンメニューで行う4ステップの<br class='br_on500'>トリートメントメニュー。<br>髪のダメージや<br class='br_on500'>お客様のお悩みを解決します。",
+      "サロンメニューで行う4ステップの<br class='br_on500'>トリートメントメニュー。<br>髪のダメージ、<br class='br_on500'>髪の悩みを解決します。",
     threePoints: [
       {
         subtitle: "特許技術",
@@ -22,6 +24,7 @@ var vm = new Vue({
         text: "活性酵素を除去する高い抗酸化力をもち、持続性にも優れた成分。紫外線など日々の避けられないダメージから髪を守ります。",
       },
     ],
+    
     message2: "強く、美しく、しなやかに、<br class='br_on500'>髪がよみがえる実感。",
   },
 });
@@ -31,7 +34,7 @@ var vm = new Vue({
   data: {
     // h2
     text1:
-      "サロントリートメントを受けたお客様とサロンの思いは？",
+      "サロントリートメントを受けたお客様と<br class='br_on500'>サロンの思いは？",
     // h3
     text2: "そんなお客様に美容師・サロンケアから、<br>週2回、ご自宅でのケアで<br>「TOKIOインカラミの効果が<br class='br_on500'>最大１ヶ月持続」する<br>TOKIO HOMEのご提案です。",
 
@@ -39,7 +42,7 @@ var vm = new Vue({
     text3: 'その持続の理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br>”業界初の集中ケアマスク”',
 
     // h5
-    text4: "TOKIOインカラミサロントリートメント<br>【4番】と同じ成分",
+    text4: "TOKIOインカラミサロントリートメント<br class='br_on500'>【4番】と同じ成分",
 
     // h6
     text5: "週<em>2</em>回、<span>月曜日</span>と<span>木曜日</span>に使うだけで、<br>サロントリートメントあとの<br>質感をずっと楽しめる！",
@@ -89,25 +92,25 @@ var vm = new Vue({
         steps: [
         {
             id:1,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_001.png',
             body: 'シャンプー後に水分をしっかり切る',
             alt: "シャンプー後に",
         },
         {
             id:2,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_002.png',
             body: '手のひらに3センチ程スライム状のHOMEを出してから',
             alt: "TOKIO HOMEを手に",
         },
         {
             id:3,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_003.png',
             body: 'クリームになるまで手のひらでしっかり伸ばします',
             alt: "TOKIO HOMEをクリーム状に",
         },
         {
             id:4,
-            img: 'images/tkh.png',
+            img: 'images/tokio-home_004.png',
             body: '中間から毛先中心に馴染ませて5分ほど放置して流します',
             alt: "TOKIO HOMEを放置",
         },
