@@ -46,6 +46,24 @@ S .col-center {
   margin: 0 auto;
 }
 
+.mid-banner {
+  text-align: center;
+  padding: 4vh 0;
+  line-height: 2em;
+}
+.mid-banner strong {
+  font-size: 2em;
+  color: #bb1e1e;
+  padding: 0 2px;
+  font-weight: bold;
+}
+.mid-banner span {
+  font-size: 2em;
+  color: #bb1e1e;
+  padding: 20px 2px;
+  font-weight: bold;
+}
+
 .jumbotron {
   padding-top: 56.25%;
   background: #6d635e;
@@ -217,7 +235,7 @@ S .col-center {
 .main .sect01 .sect01-01 .points .inner .text-top h4 {
   font-size: 2em;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: bold;
   text-shadow: 1px 1px 3px #888888;
   color: #eaa8a8;
 }
@@ -280,6 +298,7 @@ S .col-center {
 }
 .main .sect01 .sect01-03 h5 span {
   font-size: 1.25em;
+  font-weight: bold;
 }
 .main .sect01 .sect01-03 h6 {
   font-size: 2em;
@@ -288,7 +307,7 @@ S .col-center {
   margin: 2vh auto;
 }
 .main .sect01 .sect01-03 .bg {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%), url("../images/tokio-home.jpg") no-repeat;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../images/tokio-home.jpg") no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
@@ -328,6 +347,8 @@ S .col-center {
 .main .sect02 .sect02-01 .strip h2 span {
   color: #bb1e1e;
   font-size: 1.25em;
+  font-weight: bold;
+  padding: 0 3px;
 }
 .main .sect02 .sect02-01 .midDiv .days {
   height: 100%;
@@ -479,7 +500,7 @@ S .col-center {
   vertical-align: middle;
 }
 .main .sect02 .sect02-01 .product-info .points .part .circle__content p {
-  font-size: 0.75em;
+  font-size: 0.9em;
 }
 .main .sect02 .sect02-01 .product-info .points .part .circle__content h5 {
   font-size: 0.9em;
@@ -1068,10 +1089,10 @@ S .col-center {
 }
 @media screen and (max-width: 375px) {
   .main .sect01 .sect01-01 .points .inner .text-top h4 {
-    font-size: 0.9em;
+    font-size: 2em;
   }
   .main .sect01 .sect01-01 .points .inner .text-bottom p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .main .sect02 .sect02-01 h3 {
     font-size: 1.05em;
@@ -1081,6 +1102,10 @@ S .col-center {
   }
   .main .sect02 .sect02-01 h6.text5 {
     font-size: 1.05em;
+  }
+  .main .sect02 .sect02-01 .product-info .product-info-bottom {
+    font-size: 1.25em;
+    line-height: 2em;
   }
   .main .sect04 h3 {
     font-size: 1.25em;
@@ -1092,6 +1117,9 @@ S .col-center {
     font-size: 1.25em;
   }
   .main .sect10 .section10-01 h3 {
+    font-size: 1em;
+  }
+  .main .sect10 .section-title h2 {
     font-size: 1em;
   }
 }

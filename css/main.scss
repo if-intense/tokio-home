@@ -60,6 +60,25 @@ S .col-center {
     }
 }
 
+.mid-banner {
+    text-align: center;
+    padding:4vh 0;
+    line-height: 2em;
+    strong {
+        font-size: 2em;
+        color: #bb1e1e;
+        padding:0 2px;
+        font-weight: bold;
+    }
+    span {
+        // padding:20px;
+        font-size: 2em;
+        color: #bb1e1e;
+        padding:20px 2px;
+        font-weight: bold;
+    }
+}
+
 .jumbotron {
     padding-top: 56.25%;
     background: rgb(109, 99, 94);
@@ -249,7 +268,7 @@ S .col-center {
                         h4 {
                             font-size: 2em;
                             text-transform: uppercase;
-                            font-weight: 800;
+                            font-weight: bold;
                             text-shadow: 1px 1px 3px rgb(136, 136, 136);
                             color: rgb(234, 168, 168);
                         }
@@ -327,6 +346,7 @@ S .col-center {
                 line-height: 1.5em;
                 span {
                     font-size: 1.25em;
+                    font-weight: bold;
                 }
             }
             h6 {
@@ -340,7 +360,7 @@ S .col-center {
                 
             }
             .bg {
-                background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%),
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
                     url("../images/tokio-home.jpg") no-repeat;
                 background-position: center bottom;
                 background-size: cover;
@@ -383,6 +403,8 @@ S .col-center {
                     span {
                         color: #bb1e1e;
                         font-size: 1.25em;
+                        font-weight: bold;
+                        padding:0 3px;
                     }
                 }
             }
@@ -548,7 +570,7 @@ S .col-center {
                             padding: 1em;
                             vertical-align: middle;
                             p {
-                                font-size: 0.75em;
+                                font-size: 0.9em;
                             }
                             h5 {
                                 font-size: 0.9em;
@@ -1332,12 +1354,12 @@ S .col-center {
                     .inner {
                         .text-top {
                             h4 {
-                                font-size: 0.9em;
+                                font-size: 2em;
                             }
                         }
                         .text-bottom {
                             p {
-                                font-size: 0.8em;
+                                font-size: 1em;
                             }
                         }
                     }
@@ -1354,6 +1376,12 @@ S .col-center {
                 }
                 h6.text5 {
                     font-size: 1.05em;
+                }
+                .product-info {
+                    .product-info-bottom {
+                        font-size: 1.25em;
+                        line-height: 2em;
+                    }
                 }
             }
         }
@@ -1375,6 +1403,11 @@ S .col-center {
         .sect10 {
             .section10-01 {
                 h3 {
+                    font-size: 1em;
+                }
+            }
+            .section-title {
+                h2 {
                     font-size: 1em;
                 }
             }
