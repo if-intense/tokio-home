@@ -18,6 +18,16 @@ S .col-center {
     float: none !important;
 }
 
+.btn-ifing-beauty {
+    background:#E5ABA8;
+    color:#fff;
+    &:hover {
+        background:#fff;
+        border:1px solid #E5ABA8;
+        color:#000;
+    }
+}
+
 .qr-code {
     position: fixed;
     bottom: 0%;
@@ -267,7 +277,7 @@ S .col-center {
                     .text-top {
                         h4 {
                             font-size: 2em;
-                            text-transform: uppercase;
+                            // text-transform: uppercase;
                             font-weight: bold;
                             text-shadow: 1px 1px 3px rgb(136, 136, 136);
                             color: rgb(234, 168, 168);
@@ -335,7 +345,11 @@ S .col-center {
             // margin:0 auto;
             h2 {
                 text-align: center;
-                text-decoration: underline;
+                // text-decoration: underline;
+                font-weight: bold;
+                &:before, &:after {
+                    content: '---';
+                }
             }
             h3 {
                 line-height: 1.5em;
@@ -345,7 +359,7 @@ S .col-center {
                 font-size: 1em;
                 line-height: 1.5em;
                 span {
-                    font-size: 1.25em;
+                    font-size: 1.5em;
                     font-weight: bold;
                 }
             }
@@ -378,6 +392,7 @@ S .col-center {
             // h2 {
             //     text-align: center;
             // }
+
             .strip {
                 background:#fff;
                 padding:6vh 0;
@@ -391,7 +406,7 @@ S .col-center {
                     color:rgba(224, 157, 153, 0.5);
                     font-size: 3em;
                     z-index: 1;
-                    text-transform: uppercase;
+                    // text-transform: uppercase;
                     font-style: italic;
                 }
                 h2 {    
@@ -402,7 +417,7 @@ S .col-center {
                     position: relative;
                     span {
                         color: #bb1e1e;
-                        font-size: 1.25em;
+                        font-size: 1.5em;
                         font-weight: bold;
                         padding:0 3px;
                     }
@@ -414,7 +429,7 @@ S .col-center {
                     background:#fff;
                     padding:4vh 20px;
                     h4 {
-                        text-decoration: underline;
+                        // text-decoration: underline;
                         text-align: center;
                     }
                     p {
@@ -503,6 +518,10 @@ S .col-center {
                 margin-bottom: 10vh;
                 span {
                     font-weight: bold;
+                    font-size: 1.25em;
+                }
+                strong {
+                    color:#bb1e1e;
                     font-size: 1.25em;
                 }
             }
@@ -680,7 +699,7 @@ S .col-center {
                 color:rgba(224, 157, 153, 0.5);
                 font-size: 3em;
                 z-index: 1;
-                text-transform: uppercase;
+                // text-transform: uppercase;
                 font-style: italic;
             }
             h2 {    
@@ -902,10 +921,29 @@ S .col-center {
                     }
                 }
             }
+            h3 {
+                line-height: 2em;
+            }
             h4 {
                 text-align: center;
                 margin: 4vh 0;
                 line-height: 2em;
+            }
+            h4.strengthen {
+                background:#fff;
+                box-shadow: 1px 3px 6px rgb(109, 99, 94);
+                line-height: 2em;
+                span {
+                    padding-bottom:3px;
+                    border-bottom:1px solid #000;
+                }
+            }
+            p.small {
+                font-size: 0.8em;
+                color:#bb1e1e;
+                &:before {
+                    content: '*';
+                }
             }
             .text-area {
                 display: none;
