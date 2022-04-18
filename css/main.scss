@@ -234,7 +234,7 @@ S .col-center {
         .sect01-top {
             margin: 3vh auto;
             h2 {
-                font-size: 1em;
+                font-size: 2em;
                 line-height: 3em;
                 span {
                     font-size: 2em;
@@ -471,6 +471,7 @@ S .col-center {
                         text-align: center;
                         color: #fff;
                         padding:20px 0;
+                        font-size: 1.5em;
                     }
                     .testimonial-body {
                         background:#fff;
@@ -697,7 +698,7 @@ S .col-center {
             h3 {
                 position:absolute;
                 margin-top: 0;
-                top:-7.5%;
+                top:1%;
                 left:1%;
                 font-weight: 800;
                 color:rgba(224, 157, 153, 0.5);
@@ -714,7 +715,8 @@ S .col-center {
                 position: relative;
                 span {
                     color: #bb1e1e;
-                    font-size: 1.25em;
+                    font-size: 1.5em;
+                    font-weight: bold;
                 }
             }
         }
@@ -872,6 +874,7 @@ S .col-center {
             font-size: 2em;
         }
         .container {
+            padding-top:10vh;
             .section05-manga {
                 .quote {
                     display: flex;
@@ -925,18 +928,28 @@ S .col-center {
                     }
                 }
             }
+            h2 {
+                text-align: center;
+                font-size: 1.5em;
+                margin-bottom:10vh;
+                padding:10px 0;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+            }
             h3 {
                 line-height: 2em;
             }
             h4 {
                 text-align: center;
-                margin: 4vh 0;
                 line-height: 2em;
+                padding:10px 0;
+                margin-bottom: 8vh;
             }
             h4.strengthen {
                 background:#fff;
                 box-shadow: 1px 3px 6px rgb(109, 99, 94);
                 line-height: 2em;
+                margin-bottom: 0;
                 span {
                     padding-bottom:3px;
                     border-bottom:1px solid #000;
@@ -944,6 +957,7 @@ S .col-center {
             }
             p.small {
                 font-size: 0.8em;
+                margin-top:20px;
                 color:#bb1e1e;
                 &:before {
                     content: '*';
@@ -1198,6 +1212,9 @@ S .col-center {
                 }
             }
             .sect01-03 {
+                .bg {
+                    padding-bottom:7vh;
+                }
                 h3 {
                     font-size: 1.25em;
                     line-height: 2em;
@@ -1205,6 +1222,13 @@ S .col-center {
                 h6 {
                     font-size: 1.5em;
                     line-height: 2em;
+                }
+                h5 {
+                    font-size: 1.25em;
+                    line-height: 2em;
+                }
+                p {
+                    font-size: 1.25em;
                 }
             }
         }
@@ -1215,6 +1239,23 @@ S .col-center {
                 }
                 h4.bottom {
                     font-size: 1.25em;
+                }
+                .strip {
+                    h3 {
+                        top:2.5%;
+                    }
+                }
+                .voices {
+                    .testimonials {
+                        .heading {
+                            font-size: 1.25em;
+                        }
+                    }
+                    .testimonial-body {
+                        .thought-bubble {
+                            font-size: 1em;
+                        }
+                    }
                 }
             }
         }
@@ -1254,13 +1295,19 @@ S .col-center {
                     font-size: 1.1em;
                     // color:red;
                 }
+                h2 {
+                    font-size: 2em;
+                    span {
+                        font-size: 1.25em;
+                    }
+                }
                 h4 {
-                    font-size: 1.25em;
+                    font-size: 1.5em;
                 }
             }
             .sect01-02 {
                 h3 {
-                    font-size: 1.25em;
+                    font-size: 1.35em;
                 }
                 h4 {
                     font-size: 1.25em;
@@ -1291,6 +1338,22 @@ S .col-center {
                 h6.text5 {
                     font-size: 1.25em;
                 }
+                .voices {
+                    .testimonials {
+                        .testimonial-body {
+                            .thought-bubble {
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                .midDiv {
+                    .days {
+                        p {
+                            font-size: 1em;
+                        }
+                    }
+                }
             }
         }
         .sect04 {
@@ -1308,6 +1371,7 @@ S .col-center {
                         .text-top {
                             h5 {
                                 font-size: 1em;
+                                font-weight: bold;
                             }
                         }
                     }
@@ -1317,6 +1381,9 @@ S .col-center {
         .sect09 {
             .container {
                 h4 {
+                    font-size: 1.25em;
+                }
+                h3 {
                     font-size: 1.25em;
                 }
             }

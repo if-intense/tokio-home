@@ -99,7 +99,7 @@ var vm = new Vue({
     el: "#section04",
     data: {
         // steps
-        text5: "正しい使い方はこれ！</span>",
+        text5: "<span>正しい使い方</span>は<span>これ！</span>",
         text6: "月曜日と木曜日、お風呂で集中ケア<br>4ステップでより良い仕上がりへ",
         steps: [
         {

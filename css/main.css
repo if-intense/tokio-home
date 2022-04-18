@@ -203,7 +203,7 @@ S .col-center {
   margin: 3vh auto;
 }
 .main .sect01 .sect01-top h2 {
-  font-size: 1em;
+  font-size: 2em;
   line-height: 3em;
 }
 .main .sect01 .sect01-top h2 span {
@@ -406,6 +406,7 @@ S .col-center {
   text-align: center;
   color: #fff;
   padding: 20px 0;
+  font-size: 1.5em;
 }
 .main .sect02 .sect02-01 .voices .testimonials .testimonial-body {
   background: #fff;
@@ -602,7 +603,7 @@ S .col-center {
 .main .sect04 .strip h3 {
   position: absolute;
   margin-top: 0;
-  top: -7.5%;
+  top: 1%;
   left: 1%;
   font-weight: 800;
   color: rgba(224, 157, 153, 0.5);
@@ -619,7 +620,8 @@ S .col-center {
 }
 .main .sect04 .strip h2 span {
   color: #bb1e1e;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .main .sect04 .steps {
   margin: 0vh auto;
@@ -751,6 +753,9 @@ S .col-center {
   margin: 4vh auto;
   font-size: 2em;
 }
+.main .sect09 .container {
+  padding-top: 10vh;
+}
 .main .sect09 .container .section05-manga .quote {
   display: flex;
   align-items: center;
@@ -802,18 +807,28 @@ S .col-center {
   top: 50%;
   margin-top: -20px;
 }
+.main .sect09 .container h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10vh;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
 .main .sect09 .container h3 {
   line-height: 2em;
 }
 .main .sect09 .container h4 {
   text-align: center;
-  margin: 4vh 0;
   line-height: 2em;
+  padding: 10px 0;
+  margin-bottom: 8vh;
 }
 .main .sect09 .container h4.strengthen {
   background: #fff;
   box-shadow: 1px 3px 6px #6d635e;
   line-height: 2em;
+  margin-bottom: 0;
 }
 .main .sect09 .container h4.strengthen span {
   padding-bottom: 3px;
@@ -821,6 +836,7 @@ S .col-center {
 }
 .main .sect09 .container p.small {
   font-size: 0.8em;
+  margin-top: 20px;
   color: #bb1e1e;
 }
 .main .sect09 .container p.small:before {
@@ -1022,6 +1038,9 @@ S .col-center {
   .main .sect01 .sect01-02 h4 {
     font-size: 1.5em;
   }
+  .main .sect01 .sect01-03 .bg {
+    padding-bottom: 7vh;
+  }
   .main .sect01 .sect01-03 h3 {
     font-size: 1.25em;
     line-height: 2em;
@@ -1030,11 +1049,27 @@ S .col-center {
     font-size: 1.5em;
     line-height: 2em;
   }
+  .main .sect01 .sect01-03 h5 {
+    font-size: 1.25em;
+    line-height: 2em;
+  }
+  .main .sect01 .sect01-03 p {
+    font-size: 1.25em;
+  }
   .main .sect02 .sect02-01 h3 {
     font-size: 1.25em;
   }
   .main .sect02 .sect02-01 h4.bottom {
     font-size: 1.25em;
+  }
+  .main .sect02 .sect02-01 .strip h3 {
+    top: 2.5%;
+  }
+  .main .sect02 .sect02-01 .voices .testimonials .heading {
+    font-size: 1.25em;
+  }
+  .main .sect02 .sect02-01 .voices .testimonial-body .thought-bubble {
+    font-size: 1em;
   }
   .main .sect04 h3 {
     font-size: 1.5em;
@@ -1053,11 +1088,17 @@ S .col-center {
   .main .sect01 .sect01-top h3 {
     font-size: 1.1em;
   }
-  .main .sect01 .sect01-top h4 {
+  .main .sect01 .sect01-top h2 {
+    font-size: 2em;
+  }
+  .main .sect01 .sect01-top h2 span {
     font-size: 1.25em;
   }
+  .main .sect01 .sect01-top h4 {
+    font-size: 1.5em;
+  }
   .main .sect01 .sect01-02 h3 {
-    font-size: 1.25em;
+    font-size: 1.35em;
   }
   .main .sect01 .sect01-02 h4 {
     font-size: 1.25em;
@@ -1082,6 +1123,12 @@ S .col-center {
   .main .sect02 .sect02-01 h6.text5 {
     font-size: 1.25em;
   }
+  .main .sect02 .sect02-01 .voices .testimonials .testimonial-body .thought-bubble {
+    font-size: 1em;
+  }
+  .main .sect02 .sect02-01 .midDiv .days p {
+    font-size: 1em;
+  }
   .main .sect04 h3 {
     font-size: 1.25em;
   }
@@ -1093,8 +1140,12 @@ S .col-center {
   }
   .main .sect04 .steps .inner .text-area .text-top h5 {
     font-size: 1em;
+    font-weight: bold;
   }
   .main .sect09 .container h4 {
+    font-size: 1.25em;
+  }
+  .main .sect09 .container h3 {
     font-size: 1.25em;
   }
   .main .sect10 .section10-01 h3 {
