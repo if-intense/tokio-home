@@ -18,6 +18,10 @@ S .col-center {
     float: none !important;
 }
 
+.br_on375 {
+    display:none;
+}
+
 .btn-ifing-beauty {
     background:#E5ABA8;
     color:#fff;
@@ -1099,7 +1103,7 @@ S .col-center {
         .sect02 {
             .sect02-01 {
                 .product-info {
-                    width: 70%;
+                    width: 100%;
                     .img {
                         margin: 4vh auto;
                     }
@@ -1315,9 +1319,6 @@ S .col-center {
                 h4 {
                     font-size: 1.25em;
                 }
-                h3 {
-                    font-size:1.25em;
-                }
             }
         }
         .sect10 {
@@ -1388,6 +1389,9 @@ S .col-center {
 }
 
 @media screen and (max-width: 375px) {
+    .br_on375 {
+        display:block;
+    }
     .main {
         .sect01 {
             .sect01-01 {
@@ -1422,6 +1426,13 @@ S .col-center {
                     .product-info-bottom {
                         font-size: 1.25em;
                         line-height: 2em;
+                    }
+                }
+                .midDiv {
+                    .days {
+                        h4 {
+                            font-size: 1.2em;
+                        }
                     }
                 }
             }

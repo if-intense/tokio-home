@@ -15,6 +15,10 @@ S .col-center {
   float: none !important;
 }
 
+.br_on375 {
+  display: none;
+}
+
 .btn-ifing-beauty {
   background: #E5ABA8;
   color: #fff;
@@ -950,7 +954,7 @@ S .col-center {
   }
 
   .main .sect02 .sect02-01 .product-info {
-    width: 70%;
+    width: 100%;
   }
   .main .sect02 .sect02-01 .product-info .img {
     margin: 4vh auto;
@@ -1093,9 +1097,6 @@ S .col-center {
   .main .sect09 .container h4 {
     font-size: 1.25em;
   }
-  .main .sect09 .container h3 {
-    font-size: 1.25em;
-  }
   .main .sect10 .section10-01 h3 {
     font-size: 1em;
   }
@@ -1123,6 +1124,10 @@ S .col-center {
   }
 }
 @media screen and (max-width: 375px) {
+  .br_on375 {
+    display: block;
+  }
+
   .main .sect01 .sect01-01 .points .inner .text-top h4 {
     font-size: 2em;
   }
@@ -1141,6 +1146,9 @@ S .col-center {
   .main .sect02 .sect02-01 .product-info .product-info-bottom {
     font-size: 1.25em;
     line-height: 2em;
+  }
+  .main .sect02 .sect02-01 .midDiv .days h4 {
+    font-size: 1.2em;
   }
   .main .sect04 h3 {
     font-size: 1.25em;

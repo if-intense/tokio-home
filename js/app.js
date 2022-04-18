@@ -164,8 +164,8 @@ var vm = new Vue({
 var vm = new Vue({
   el: '#section10',
   data: {
-    topMessage1: '毎日のホームケアが変わる！<br>TOKIO IEインカラミシャンプー・トリートメントを<br>オススメします',
-    topMessage: '週2回のTOKIO HOMEと毎日の<br>TOKIO IEインカラミシャンプートリートメントで<br>自分史上最高の美髪を手に入れましょう！',
+    topMessage1: '毎日のホームケアが変わる！<br>TOKIO IE<br class="br_on375">インカラミシャンプー・トリートメントを<br>オススメします',
+    topMessage: '週2回のTOKIO HOMEと毎日の<br>TOKIO IE<br class="br_on375">インカラミシャンプートリートメントで<br>自分史上最高の美髪を手に入れましょう！',
     images: [
       {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
       {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ'},
